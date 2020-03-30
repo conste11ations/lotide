@@ -13,8 +13,8 @@ const numberChecker = function(input) {
 const assertEqual = function(actual, expected) {
 
   // Defining the messages to be printed to console
-  const passMsg = '💚🥬📗 Assertion Passed: ' + numberChecker(actual) + ' === ' + numberChecker(expected);
-  const errorMsg = '🍎🧧🔴 Assertion Failed: ' + numberChecker(actual) + ' !== ' + numberChecker(expected);
+  const passMsg = `💚🥬📗 Assertion Passed: ${numberChecker(actual)} === ${numberChecker(expected)}`;
+  const errorMsg = `🍎🧧🔴 Assertion Failed: ${numberChecker(actual)} !== ${numberChecker(expected)}`;
  
 
   //try-catch statement to get Assertion Error
