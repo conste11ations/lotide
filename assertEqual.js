@@ -16,19 +16,18 @@ const assertEqual = function(actual, expected) {
   const passMsg = `💚🥬📗 Assertion Passed: ${numberChecker(actual)} === ${numberChecker(expected)}`;
   const errorMsg = `🍎🧧🔴 Assertion Failed: ${numberChecker(actual)} !== ${numberChecker(expected)}`;
  
-
-  //try-catch statement to get Assertion Error
-  try {
-    console.assert(actual === expected);
+  if (actual === expected) {
     console.log(passMsg);
-  } catch (e) {
-    if (e instanceof AssertionError) {
-      console.log(errorMsg);
-    }
+  } else {
+    console.log(errorMsg);
   }
 };
 
 // TEST CODE
+/*
+Assertion Failed: "Lighthouse Labs" !== "Bootcamp"
+Assertion Passed: 1 === 1
+*/
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 assertEqual(0, 1);
