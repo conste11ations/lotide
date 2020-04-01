@@ -1,6 +1,3 @@
-//const assert = require('assert');
-const AssertionError = require('assert').AssertionError;
-
 // In the requirements, strings seem to have quotation marks, numbers do not.
 const addQuotes = function(input) {
   if (typeof input === 'number') {

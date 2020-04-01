@@ -1,5 +1,3 @@
-//const assert = require('assert');
-const AssertionError = require('assert').AssertionError;
 
 // In the requirements, strings seem to have quotation marks, numbers do not.
 const addQuotes = function(input) {
@@ -27,24 +25,23 @@ const eqArrays = function(arrayA, arrayB) {
   if (arrayA.length !== arrayB.length) {
     return false;
   } else {
-      for (let i = 0; i < arrayA.length; i++) {
-        if (arrayA[i] === arrayB[i]) {
-        } else {
-          return false;
-        }
+    for (let i = 0; i < arrayA.length; i++) {
+      if (arrayA[i] !== arrayB[i]) {
+        return false;
       }
-      return true;
+    }
+    return true;
   }
-}
+};
 
 const assertArraysEqual = function(actual, expected) {
 
   if (eqArrays(actual, expected)) {
-    console.log("💚🥬📗 Assertion Passed: ", actual, " === ", expected);    
+    console.log("💚🥬📗 Assertion Passed: ", actual, " === ", expected);
   } else {
     console.log("🍎🧧🔴 Assertion Failed: ", actual, " !== ", expected);
   }
-}
+};
 
 // TEST CODE
 
