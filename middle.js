@@ -28,13 +28,13 @@ const middle = function(array) {
   if (array.length <= 2) {
     return result;
   }  else if (array.length % 2 === 0) {
-    result.push(array[pivot-1]);
+    result.push(array[pivot - 1]);
     result.push(array[pivot]);
   } else {
     result.push(array[pivot]);
   }
   return result;
-}
+};
 
 // TEST CODE
 
