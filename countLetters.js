@@ -34,12 +34,14 @@ const countLetters = function(sentence) {
       result[char] = 1;
     }
   }
+  delete result[" "];
   return result;
 };
 
 // TEST CODE
 const testStr = "I am a testy string";
 const result1 = countLetters(testStr);
+console.log(result1);
 
 assertEqual(result1["t"], 3); //true
 assertEqual(result1["i"], 1); //true
