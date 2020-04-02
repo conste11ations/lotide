@@ -11,7 +11,7 @@ const map = function(array, callback) {
     results.push(callback(item));
   }
   return results;
-}
+};
 
 const eqArrays = function(arrayA, arrayB) {
   if (arrayA.length !== arrayB.length) {
@@ -38,8 +38,8 @@ const assertArraysEqual = function(actual, expected) {
 const words = ["ground", "control", "to", "major", "tom"];
 
 const results1 = map(words, word => word[0]);
-assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]) // true
+assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]); // true
 
 const results2 = map(words, word => word.split("").reverse().join(""));
-const test2 = ["dnuorg", "lortnoc", "ot", "rojam", "mot"]
+const test2 = ["dnuorg", "lortnoc", "ot", "rojam", "mot"];
 assertArraysEqual(results2, test2);

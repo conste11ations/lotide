@@ -44,9 +44,9 @@ const eqObjects = function(object1, object2) {
     for (let [key, value] of Object.entries(object1)) {
       if (Array.isArray(value)) { // if this is an array comparison
         if (!eqArrays(value, object2[key])) { // if the arrays are equal
-          return false; 
+          return false;
         }
-       } else { // primitive type
+      } else { // primitive type
         if (!(value === object2[key])) {
           return false;
         }
@@ -63,14 +63,14 @@ const ba = { b: "2", a: "1" };
 assertEqual(eqObjects(ab, ba), true); // pass
 
 const abc = { a: "1", b: "2", c: "3" };
-assertEqual(eqObjects(ab, abc), false); // pass 
+assertEqual(eqObjects(ab, abc), false); // pass
 
 const empty = {};
 assertEqual(eqObjects(ba, empty), false); // pass
 
-assertEqual(eqObjects(empty, {}), true) // pass
-assertEqual(eqObjects(empty, undefined), false) // pass
-assertEqual(eqObjects(undefined, undefined), false) // I think this should return false
+assertEqual(eqObjects(empty, {}), true); // pass
+assertEqual(eqObjects(empty, undefined), false); // pass
+assertEqual(eqObjects(undefined, undefined), false); // I think this should return false
 
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
