@@ -43,8 +43,10 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
+module.exports = { eqArrays, assertArraysEqual };
 
+// TEST CODE
+/*
 console.log(assertArraysEqual([1, 2, 3], [1, 2, 3])); // => true
 console.log(assertArraysEqual([1, 2, 3], [3, 2, 1])); // => false
 
@@ -53,3 +55,4 @@ console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", 3])); // => false
 
 console.log(assertArraysEqual([], [])); // true
 console.log(assertArraysEqual(["fi", "fo", "fum"], ["fi", "fo"])); // false
+*/
