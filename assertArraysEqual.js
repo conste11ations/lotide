@@ -1,18 +1,5 @@
-const lib = require('./assertEqual.js');
-const assertEqual = lib.assertEqual;
-
-const eqArrays = function(arrayA, arrayB) {
-  if (arrayA.length !== arrayB.length) {
-    return false;
-  } else {
-    for (let i = 0; i < arrayA.length; i++) {
-      if (arrayA[i] !== arrayB[i]) {
-        return false;
-      }
-    }
-    return true;
-  }
-};
+const eqArrayslib = require('./eqArrays');
+const eqArrays = eqArrayslib.eqArrays;
 
 const assertArraysEqual = function(actual, expected) {
 
@@ -23,4 +10,4 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-module.exports = { eqArrays, assertArraysEqual };
+module.exports = { assertArraysEqual };
