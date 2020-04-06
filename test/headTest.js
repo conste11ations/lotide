@@ -1,7 +1,17 @@
-const assertEqualLib = require('../assertEqual');
-const headLib = require('../head');
-const assertEqual = assertEqualLib.assertEqual;
-const head = headLib.head;
+const assert = require('chai').assert;
+const head   = require('../head');
 
-assertEqual(head([5, 4, 3]), 5);
-assertEqual(head(["apple"]), "apple");
+describe("#head", () => {
+  it("returns 1 for [1, 2, 3]", () => {
+    assert.strictEqual(head([1, 2, 3]), 1);
+  });
+  it("returns '5' for ['5']", () => {
+    assert.strictEqual(head(['5']), '5'); 
+  });
+  it("returns 5 for [5, 4, 3]", () => {
+    assert.strictEqual(head([5, 4, 3]), 5);
+  });
+  it("returns 'apple' for ['apple']", () => {
+    assert.strictEqual(head(["apple"]), "apple");
+  });
+});
