@@ -20,16 +20,3 @@ const assertEqual = function(actual, expected) {
   }
 };
 module.exports = { assertEqual };
-// TEST CODE
-/*
-Assertion Failed: "Lighthouse Labs" !== "Bootcamp"
-Assertion Passed: 1 === 1
-*/
-/*
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual(0, 1);
-assertEqual("10", 10);
-assertEqual(1.1, "Hi");
-assertEqual("red", "red");
-*/

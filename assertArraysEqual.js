@@ -1,25 +1,5 @@
-
-// In the requirements, strings seem to have quotation marks, numbers do not.
-const addQuotes = function(input) {
-  if (typeof input === 'number') {
-    return input;
-  } else {
-    return '"' + input + '"';
-  }
-};
-
-const assertEqual = function(actual, expected) {
-
-  // Defining the messages to be printed to console
-  const passMsg = `💚🥬📗 Assertion Passed: ${addQuotes(actual)} === ${addQuotes(expected)}`;
-  const errorMsg = `🍎🧧🔴 Assertion Failed: ${addQuotes(actual)} !== ${addQuotes(expected)}`;
- 
-  if (actual === expected) {
-    console.log(passMsg);
-  } else {
-    console.log(errorMsg);
-  }
-};
+const lib = require('./assertEqual.js');
+const assertEqual = lib.assertEqual;
 
 const eqArrays = function(arrayA, arrayB) {
   if (arrayA.length !== arrayB.length) {
@@ -44,15 +24,3 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 module.exports = { eqArrays, assertArraysEqual };
-
-// TEST CODE
-/*
-console.log(assertArraysEqual([1, 2, 3], [1, 2, 3])); // => true
-console.log(assertArraysEqual([1, 2, 3], [3, 2, 1])); // => false
-
-console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", "3"])); // => true
-console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", 3])); // => false
-
-console.log(assertArraysEqual([], [])); // true
-console.log(assertArraysEqual(["fi", "fo", "fum"], ["fi", "fo"])); // false
-*/
