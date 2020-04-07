@@ -43,3 +43,5 @@ assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]); // true
 const results2 = map(words, word => word.split("").reverse().join(""));
 const test2 = ["dnuorg", "lortnoc", "ot", "rojam", "mot"];
 assertArraysEqual(results2, test2);
+
+module.exports = map;

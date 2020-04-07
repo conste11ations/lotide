@@ -48,3 +48,5 @@ assertEqual(result1["i"], 1); //true
 assertEqual(result1["I"], 1); //true
 assertEqual(result1["a"], 2); //true
 assertEqual(result1["m"], 1); //true
+
+module.exports = countLetters;

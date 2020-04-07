@@ -60,3 +60,5 @@ console.log(newWords); // => ['hello', 'world']
 console.log(without([1, 2, 3], [1])); // => [2, 3]
 console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
 console.log(without(["a", "c"], ["a", "c"]));
+
+module.exports = without;

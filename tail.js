@@ -3,4 +3,4 @@ const tail = function(array) {
   return (array === undefined) ? undefined : array.slice(1, array.length);
 };
 
-module.exports = { tail };
+module.exports = tail;

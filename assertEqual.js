@@ -19,4 +19,4 @@ const assertEqual = function(actual, expected) {
     console.log(errorMsg);
   }
 };
-module.exports = { assertEqual };
+module.exports = assertEqual;

@@ -46,3 +46,5 @@ assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama"); //true
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined); //true
 assertEqual(findKeyByValue(bestTVShowsByGenre, "Scooby Doo"), "MYSTERY"); // false because case-sensitive
 
+module.exports = findKeyByValue;
+

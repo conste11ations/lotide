@@ -12,4 +12,4 @@ const eqArrays = function(arrayA, arrayB) {
   }
 };
 
-module.exports = { eqArrays };
+module.exports = eqArrays;
