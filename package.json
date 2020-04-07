@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@conste11ations/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A partial re-implementation of the lodash library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/conste11ations/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rachel Kat",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/conste11ations/lotide/issues"
